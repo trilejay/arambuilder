@@ -12,7 +12,7 @@ function App() {
     try {
       setLoading(true);
 
-      const encodedURL = encodeURIComponent("https://www.op.gg/modes/aram/fizz/build?hl=en_US");
+      const encodedURL = encodeURIComponent(inputValue);
       const response = await fetch(`http://127.0.0.1:5000/api/scrape?url=${encodedURL}`, {
         mode: 'cors',
       });
